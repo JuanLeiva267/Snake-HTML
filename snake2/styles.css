@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+body.light {
+    background-color: #a0d3f0;
+    color: #000;
+}
+
+body.dark {
+    background-color: #333;
+    color: #fff;
+}
+
+body.neon {
+    background-color: #000;
+    color: #0f0;
+}
+
+#menu {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    display: block;
+}
+
+#startMenu {
+    margin-bottom: 10px;
+}
+
+#startMenu input, #startMenu button {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#startMenu input {
+    width: 100%;
+}
+
+#menu button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#menu button:hover {
+    background-color: #0056b3;
+}
+
+#score {
+    font-size: 18px;
+}
+
+#gameArea {
+    width: 400px;
+    height: 400px;
+    background-color: #009900;
+    position: relative;
+    border: 2px solid #000;
+    overflow: hidden;
+}
+
+.snake-segment {
+    position: absolute;
+    background-color: #ff0000;
+}
+
+.snake-head {
+    background-color: #cc0000;
+}
+
+#food {
+    position: absolute;
+    background-color: #ffff00;
+}
+
+#highScores {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+
+#highScores h2 {
+    margin: 0 0 10px;
+}
+
+#scoreList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#scoreList li {
+    margin-bottom: 10px;
+}
+
+.obstacle {
+    position: absolute;
+    background-color: #555;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego Snake Mejorado</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="light">
+    <div id="menu">
+        <div id="startMenu">
+            <input type="text" id="playerName" placeholder="Introduce tu nombre">
+            <label for="snakeColor">Color de la Serpiente:</label>
+            <input type="color" id="snakeColor" value="#ff0000">  <!-- Selector de color -->
+            <label for="difficulty">Dificultad:</label>
+            <select id="difficulty">  <!-- Selector de dificultad -->
+                <option value="easy">Fácil</option>
+                <option value="medium">Medio</option>
+                <option value="hard">Difícil</option>
+            </select>
+            <button id="startButton">Iniciar Juego</button>
+        </div>
+        <button id="restartButton">Reiniciar Juego</button>
+        <div id="score">Puntuación: 0</div>
+        <select id="themeSelector">
+            <option value="light">Claro</option>
+            <option value="dark">Oscuro</option>
+            <option value="neon">Neón</option>
+        </select>
+    </div>
+    <div id="gameArea">
+        <div id="snake"></div>
+        <div id="food"></div>
+    </div>
+    <div id="highScores">
+        <h2>Tabla de Puntuaciones</h2>
+        <ul id="scoreList"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
